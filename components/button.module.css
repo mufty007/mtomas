@@ -12,7 +12,7 @@
     border: 1px solid var(--white);
     border-radius: 100%;
     background: transparent;
-    transition: transform 0.17s linear;
+    transition: 0.17s linear;
 }
 
 
