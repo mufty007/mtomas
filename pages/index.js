@@ -1,6 +1,7 @@
 // Components
 import Nav from "../components/nav";
 import Hero from "../components/hero"
+import Projects from "../components/projects";
 
 export default function Home() {
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Nav />
       <Hero/>
+      <Projects/>
     </>
   )
 }
