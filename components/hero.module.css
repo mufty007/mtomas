@@ -1,0 +1,91 @@
+.heroContainer{
+    width:90%;
+    max-width:1720px;
+    height:100vh;
+    margin:0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.heroContent{
+    width:78%;
+    height:800px;
+    position: absolute;
+    z-index: 4;
+    bottom: -15%;
+}
+
+.heroContent p{
+    margin-top: 60px;
+    width:50%;
+}
+
+.heroImage{
+    position: relative;
+    width:80%;
+    max-width: 1408px;
+    height:800px;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: 2;
+}
+
+.heroImag Image{
+    width:100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 960px){
+    .heroContainer{
+        height:80vh;
+    }
+    
+    .heroContent{
+        width:70%;
+        height:600px;
+        bottom: 10%;
+    }
+    
+    .heroContent p{
+        margin-top: 40px;
+        width:80%;
+    }
+    
+    .heroImage{
+        width:80%;
+        height:500px;
+    }
+     
+}
+
+@media screen and (max-width: 600px){
+    .heroContainer{
+        height:100vh;
+    }
+    
+    .heroContent{
+        width:90%;
+        height:600px;
+        bottom: -4%;
+    }
+    
+    .heroContent p{
+        margin-top: 40px;
+        width:100%;
+    }
+    
+    .heroImage{
+        width:100%;
+        height:300px;
+    }
+}
