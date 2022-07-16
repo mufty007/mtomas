@@ -18,7 +18,11 @@ export default function Nav(){
                 />
                 </a>
             </div>
-            <div className={styles.available}>available for work</div>
+            <div className={styles.available}>
+                <Link href="#">
+                    available for work
+                </Link>
+            </div>
             <div className={styles.navigation}>
                 <ul>
                     <li>
