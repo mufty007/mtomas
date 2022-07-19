@@ -1,5 +1,6 @@
 // Imports
 import Image from 'next/image'
+import CircleButton from './circleButton'
 
 // Styles
 import styles from './hero.module.css'
@@ -7,7 +8,7 @@ import 'animate.css'
 
 // image
 import HeroImage from '../assests/images/heroImage.jpg'
-import Button from './button'
+
 
 export default function Hero(){ 
 
@@ -25,7 +26,7 @@ export default function Hero(){
                     layout='fill'
                 /> 
                 <div className={styles.overlay}>
-                    <Button onClick={() => console.log("Clicked")} children="view work"/>
+                    <CircleButton onClick={() => console.log("Clicked")} children="view work" />
                 </div>
             </div>
         </div>    

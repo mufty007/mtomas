@@ -1,9 +1,9 @@
 import 'animate.css'
 
 // Styles
-import styles from './button.module.css'
+import styles from './circleButton.module.css'
 
-export default function Button({onClick, children}){
+export default function CircleButton({onClick, children}){
 
     if(process.browser){
         const btn = window.document.querySelector('.btn');

@@ -1,5 +1,4 @@
-// Impoorts
-import { useEffect } from 'react'
+
 
 // Styles
 import '../styles/globals.css'

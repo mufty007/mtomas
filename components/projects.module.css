@@ -1,0 +1,18 @@
+.heroContainer{
+    width:90%;
+    max-width:1720px;
+    margin:0 auto;
+    position: relative;
+}
+
+.sectionTitle{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.line{
+    margin: 20px auto;
+    height: 1px;
+}
