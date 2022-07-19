@@ -4,6 +4,8 @@ const nextConfig = {
   swcMinify: true,
 }
 
+module.exports = nextConfig
+
 module.exports = {
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
@@ -16,5 +18,3 @@ module.exports = {
     return config
   }
 }
-
-module.exports = nextConfig
