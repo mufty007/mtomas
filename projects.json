@@ -1,8 +1,8 @@
-export const projects = [
+[
     {
         "id": 1,
         "title": "Regent-Parks",
-        "tag":["ui desing", "web desing & development"],
+        "tags":["ui desing", "web desing & development"],
         "website":"https://regent-parks.com/",
         "description":" is an associate-first employment firm with a straightforward success formula.",
         "imageUrl":"../assests/images/regenrparks.png"
@@ -10,15 +10,15 @@ export const projects = [
     {
         "id": 2,
         "title": "Newtothedeen",
-        "tag":["ui desing", "web desing & development"],
+        "tags":["ui desing", "web desing & development"],
         "website":"https://newtothedeen.com/",
         "description":" is a new platform for Muslim converts and those researching Islam to learn and understand the fundamentals of our wonderful Deen. As converts and relatives to converts, we understand the great need for this service and hope that we can provide genuine support.",
-        "imageUrl":"../assests/images/regenrparks.png"
+        "imageUrl":"../assests/images/regenrparks.pngge.jpg"
     },
     {
         "id": 3,
         "title": "Regent-Parks",
-        "tag":["ui desing", "web desing & development"],
+        "tags":["ui desing", "web desing & development"],
         "website":"https://regent-parks.com/",
         "description":" is an associate-first employment firm with a straightforward success formula.",
         "imageUrl":"../assests/images/regenrparks.png"
@@ -26,7 +26,7 @@ export const projects = [
     {
         "id": 4,
         "title": "Regent-Parks",
-        "tag":["ui desing", "web desing & development"],
+        "tags":["ui desing", "web desing & development"],
         "website":"https://regent-parks.com/",
         "description":" is an associate-first employment firm with a straightforward success formula.",
         "imageUrl":"../assests/images/regenrparks.png"
@@ -34,7 +34,7 @@ export const projects = [
     {
         "id": 5,
         "title": "Regent-Parks",
-        "tag":["ui desing", "web desing & development"],
+        "tags":["ui desing", "web desing & development"],
         "website":"https://regent-parks.com/",
         "description":" is an associate-first employment firm with a straightforward success formula.",
         "imageUrl":"../assests/images/regenrparks.png"

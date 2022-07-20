@@ -1,8 +1,7 @@
 // Imports 
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import fsPromises from 'fs/promises'
-import path from 'path'
+import Projects from '../projects.json'
 
 // Styles
 import styles from './projectSlider.module.css'
@@ -11,19 +10,8 @@ import 'swiper/css';
 
 import RegentParks from '../assests/images/regenrparks.png'
 
-export async function getStaticProps(){
-    const filePath = path.join(process.cwd(), 'projects.json')
+export default function projectSlider({props}){
 
-    const jsonData = await fsPromises.readFile(filePath)
-
-    const objectData = JSON.parse(jsonData)
-
-    return {
-        props: objectData
-    }
-}
-
-export default function projectSlider(){
     return (
             <Swiper
                 slidesPerView={"auto"}
@@ -42,152 +30,44 @@ export default function projectSlider(){
                 }}
                 className={styles.swiper}
             >
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.projectInfo}>
-                            <div className={styles.projectInfoTop}>
-                                <h2 className={styles.projectTitle}>Regent-Parks</h2>
-                                <ul className={styles.projectTags}>
-                                    <li>UI Design</li>
-                                    <li>web design & Development</li>
-                                </ul>
-                                <p className={styles.projectDescription}>
-                                    <a href="#" target="_black">regent-parks</a> is an associate-first employment firm with a straightforward success formula.
-                                </p>
+                {Projects && Projects.map(project => (
+                    <SwiperSlide key={project.id}>
+                        <div className={styles.project}>
+                            <div className={styles.projectInfo}>
+                                <div className={styles.projectInfoTop}>
+                                    <h2 className={styles.projectTitle}>{project.title}</h2>
+                                        {project.tags && project.tags.map((tag, index) => {
+                                            return (
+                                                <ul className={styles.projectTags} key={project.id}>
+                                                    <li>{tag}</li>
+                                                </ul>    
+                                            )
+                                                
+                                        })}
+                                        
+                                    <p className={styles.projectDescription}>
+                                        <a href="#" target="_black">{project.title}</a> {project.description}
+                                    </p>
+                                </div>
+                                <div>
+                                    <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
+                                </div>
                             </div>
-                            <div>
-                                <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
+                            <div className={styles.projectImg}>
+                            <div className={styles.image}>
+                                <img src={project.imageUrl} className={styles.img}>
+                                </img>
+                                {/* <Image 
+                                        src={project.imageUrl}
+                                        alt="Picture of the author"
+                                        layout='res'
+                                        className={styles.image}
+                                    /> */}
                             </div>
-                        </div>
-                        <div className={styles.projectImg}>
-                        <div className={styles.image}>
-                            <Image 
-                                    src={RegentParks}
-                                    alt="Picture of the author"
-                                    layout='responsive'
-                                    className={styles.image}
-                                />
-                        </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.projectInfo}>
-                            <div className={styles.projectInfoTop}>
-                                <h2 className={styles.projectTitle}>Regent-Parks</h2>
-                                <ul className={styles.projectTags}>
-                                    <li>UI Design</li>
-                                    <li>web design & Development</li>
-                                </ul>
-                                <p className={styles.projectDescription}>
-                                    <a href="#" target="_black">regent-parks</a> is an associate-first employment firm with a straightforward success formula.
-                                </p>
-                            </div>
-                            <div>
-                                <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
                             </div>
                         </div>
-                        <div className={styles.projectImg}>
-                        <div className={styles.image}>
-                            <Image 
-                                    src={RegentParks}
-                                    alt="Picture of the author"
-                                    layout='responsive'
-                                    className={styles.image}
-                                />
-                        </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.projectInfo}>
-                            <div className={styles.projectInfoTop}>
-                                <h2 className={styles.projectTitle}>Regent-Parks</h2>
-                                <ul className={styles.projectTags}>
-                                    <li>UI Design</li>
-                                    <li>web design & Development</li>
-                                </ul>
-                                <p className={styles.projectDescription}>
-                                    <a href="#" target="_black">regent-parks</a> is an associate-first employment firm with a straightforward success formula.
-                                </p>
-                            </div>
-                            <div>
-                                <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
-                            </div>
-                        </div>
-                        <div className={styles.projectImg}>
-                        <div className={styles.image}>
-                            <Image 
-                                    src={RegentParks}
-                                    alt="Picture of the author"
-                                    layout='responsive'
-                                    className={styles.image}
-                                />
-                        </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.projectInfo}>
-                            <div className={styles.projectInfoTop}>
-                                <h2 className={styles.projectTitle}>Regent-Parks</h2>
-                                <ul className={styles.projectTags}>
-                                    <li>UI Design</li>
-                                    <li>web design & Development</li>
-                                </ul>
-                                <p className={styles.projectDescription}>
-                                    <a href="#" target="_black">regent-parks</a> is an associate-first employment firm with a straightforward success formula.
-                                </p>
-                            </div>
-                            <div>
-                                <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
-                            </div>
-                        </div>
-                        <div className={styles.projectImg}>
-                        <div className={styles.image}>
-                            <Image 
-                                    src={RegentParks}
-                                    alt="Picture of the author"
-                                    layout='responsive'
-                                    className={styles.image}
-                                />
-                        </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.project}>
-                        <div className={styles.projectInfo}>
-                            <div className={styles.projectInfoTop}>
-                                <h2 className={styles.projectTitle}>Regent-Parks</h2>
-                                <ul className={styles.projectTags}>
-                                    <li>UI Design</li>
-                                    <li>web design & Development</li>
-                                </ul>
-                                <p className={styles.projectDescription}>
-                                    <a href="#" target="_black">regent-parks</a> is an associate-first employment firm with a straightforward success formula.
-                                </p>
-                            </div>
-                            <div>
-                                <RectButton className={styles.btn} onClick={() => console.log("Clicked")} children={["view case study", <span className={styles.arrows}>&#x2197;</span>]}/>
-                            </div>
-                        </div>
-                        <div className={styles.projectImg}>
-                        <div className={styles.image}>
-                            <Image 
-                                    src={RegentParks}
-                                    alt="Picture of the author"
-                                    layout='responsive'
-                                    className={styles.image}
-                                />
-                        </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                
+                    </SwiperSlide>
+                ))}
    
             </Swiper>
         
