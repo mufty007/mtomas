@@ -4,15 +4,15 @@
         "title": "Regent-Parks",
         "tags":["ui desing", "web desing & development"],
         "website":"https://regent-parks.com/",
-        "description":" is an associate-first employment firm with a straightforward success formula.",
-        "imageUrl":"assests/images/regenrparks.png"
+        "year":"2022",
+        "imageUrl":"/images/regenrparks.png"
     },
     {
         "id": 2,
         "title": "Newtothedeen",
         "tags":["ui desing", "web desing & development"],
         "website":"https://newtothedeen.com/",
-        "description":" is a new platform for Muslim converts and those researching Islam to learn and understand the fundamentals of our wonderful Deen. As converts and relatives to converts, we understand the great need for this service and hope that we can provide genuine support.",
-        "imageUrl":"assests/images/regenrparks.pngge.jpg"
+        "year":"2022",
+        "imageUrl":"/images/regenrparks.pngge.jpg"
     }
 ]
