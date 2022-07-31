@@ -19,7 +19,8 @@ export default function Nav(){
                 </a>
             </div>
             <div className={styles.available}>
-                <Link href="#">
+                <div className={styles.circle}></div>
+                <Link href="#" className={styles.link}>
                     available for work
                 </Link>
             </div>
