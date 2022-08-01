@@ -14,6 +14,11 @@
   src: url('../assests/fonts/george-x-regular.woff');
 }
 
+@font-face {
+  font-family: 'ogg';
+  src: url('../assests/fonts/ogg.woff');
+}
+
 *{
   padding: 0;
   margin: 0;
