@@ -8,7 +8,7 @@ export const projects = [
     {
         "id": 1,
         "title": "Newtothedeen",
-        "tags":["ui desing ","web desing & development"],
+        "tags":["ui desing ","web desing & development", "wordpress"],
         "website":"https://newtothedeen.com/",
         "year":"2022",
         "imageUrl": Newtothedeen

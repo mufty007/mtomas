@@ -33,7 +33,7 @@ export default function Nav(){
                     </li>
                     
                     <li>
-                        <Link href="#">
+                        <Link href="#process">
                             <a href="#">process</a>
                         </Link>
                     </li>

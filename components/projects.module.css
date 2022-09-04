@@ -18,7 +18,7 @@
 }
 
 .Projects{
-    margin:60px 0px;
+    margin:100px 0px;
     width:100%;
     display: flex;
     flex-wrap: wrap;
@@ -127,13 +127,17 @@
 }
 
 .projectInfoTop ul li{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: 1px solid var(--main-black);
     border-radius: 50px;
+}
+
+.project:nth-child(2) .projectInfoTop ul li{
+    border: 1px solid var(--white);
 }
 
 .projectInfoBottom{

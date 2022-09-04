@@ -8,19 +8,10 @@ import { FiArrowUpRight } from "react-icons/fi";
 // Styles
 import styles from './projects.module.css'
 
-export const getStaticProps = async () => {
-    return {
-        props: {
-            project: projects,
-        }
-    }
-}
-
-
 export default function Projects({ project }){ 
 
     return(
-        <div className={styles.heroContainer} id="work">
+        <div className={styles.heroContainer} id="work" >
             <p className={styles.sectionTitle}>Selected projects</p>
             <hr className={styles.line}></hr>
             

@@ -1,0 +1,103 @@
+.heroContainer{
+    width:90%;
+    max-width:1720px;
+    margin:0 auto;
+    position: relative;
+}
+
+.sectionTitle{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.line{
+    margin: 20px auto;
+    height: 1px;
+}
+
+.process{
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.right{
+    width: 50%;
+}
+
+.left{
+    width: 50%;
+    position: relative;
+}
+
+.left::after{
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(0, 168, 168) 100%, rgba(0, 116, 116, 0) 100%);
+    filter: blur(800px);
+}
+
+
+.right h2{
+    font-size: 100px;
+    margin-bottom: 60px;
+}
+
+.right h2 span{
+    font-family: 'ogg';
+    font-style: italic;
+}
+
+.listItem{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+.left .process{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.left .process .top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.left .process .top .iconBox{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(42px);
+    border-radius: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left .process .top h3{
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
