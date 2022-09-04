@@ -3,33 +3,30 @@ import Image from 'next/image'
 
 // Styles
 import styles from './projects.module.css'
+import 'animate.css'
+
 
 const ProjectCard = ({ id, title, year, website, tags, imageUrl }) => (
-    <div className={styles.project} key={id}>
-        <div className={styles.projectImage}>
-            <div className={styles.img}>
-            <Image 
-                src={imageUrl}
-                layout="responsive"
-                alt={title}
-                className={styles.img}
-            />
-            </div>
+    <div className={`${title} ${styles.project}`} key={id} id={title}>
+        <div className={`${styles.projectInfoTop} animate__animated animate__fadeIn animate__delay-1s`}>
+            <h2>
+                {title}
+            </h2>
+            <ul>
+                {
+                    tags && tags.map((tags) => (
+                        <li key={tags.id}>{tags}</li>
+                    ))
+                }
+            </ul>
         </div>
-        <div className={styles.projectInfo}>
-            <div className={styles.projectInfoTop}>
-
-                <ul>
-                    <li>{tags}</li>
-                </ul>
-                                
-                <div className={styles.year}>{year}</div>
-            </div>
-            <div className={styles.projectInfoBottom}>
-                <h2>
-                    <a href={website} target='_blank' rel="noreferrer">{title}</a>
-                </h2>
-            </div>
+        
+        <div className={`${styles.img} animate__animated animate__zoomIn animate__delay-2s`}>
+            <Image src={imageUrl}/>
+        </div>
+        <div className={`${styles.projectInfoBottom} animate__animated animate__fadeIn animate__delay-1s`}>
+            <div className={styles.year}>{year}</div>
+            <a href={website} target='_blank' rel="noreferrer">visit site</a>
         </div>
     </div> 
 )

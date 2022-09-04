@@ -7,6 +7,8 @@
   --off-white: #f6f6f6;
   --available: #37EC9C;
   --not-available: #EC3737;
+  padding:0;
+  margin:0;
 }
 
 @font-face {
@@ -33,6 +35,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 p {

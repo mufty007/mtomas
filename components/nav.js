@@ -27,7 +27,7 @@ export default function Nav(){
             <div className={styles.navigation}>
                 <ul>
                     <li>
-                        <Link href="#">
+                        <Link href="#work">
                             <a href="#">work</a>
                         </Link>
                     </li>
@@ -41,6 +41,11 @@ export default function Nav(){
                     <li>
                         <Link href="#">
                             <a href="#">figma freebies</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="#">
+                            <a href="#">about me</a>
                         </Link>
                     </li>
                 </ul>
