@@ -22,6 +22,7 @@
     margin: 100px auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     z-index: 5;
 }
 
@@ -31,6 +32,9 @@
 
 .left{
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -70,6 +74,7 @@
 
 .left .process{
     width: 48%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -84,8 +89,8 @@
 }
 
 .left .process .top .iconBox{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin-right: 20px;
     background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(42px);
