@@ -21,8 +21,9 @@
     margin:100px 0px;
     width:100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 26px;
     justify-content: space-between;
 }
 
@@ -44,7 +45,7 @@
     padding: 40px;
     color: var(--main-black);
     background:aliceblue;
-    width: 49.3%;
+    width: 49.2%;
     height:700px;
     display: flex;
     flex-direction: column;
