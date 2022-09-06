@@ -16,7 +16,7 @@ export const getStaticProps = async () => {
 }
 
 
-export default function Process({ project }){ 
+export default function Process({  }){ 
 
     return(
         <div className={styles.heroContainer} id="process">

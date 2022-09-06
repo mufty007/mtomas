@@ -8,7 +8,7 @@ import styles from './skills.module.css'
 export default function Skills({ tool }){ 
 
     return(
-        <div className={styles.heroContainer} id="work" >
+        <div className={styles.heroContainer} id="tools" >
             <p className={styles.sectionTitle}>Tools & Technologies</p>
             <hr className={styles.line}></hr>
             

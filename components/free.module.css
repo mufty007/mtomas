@@ -1,0 +1,67 @@
+.heroContainer{
+    width:90%;
+    max-width:1720px;
+    margin:0 auto;
+    position: relative;
+}
+
+.sectionTitle{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.line{
+    margin: 20px auto;
+    height: 1px;
+}
+
+.freebies{
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.right{
+    width: 50%;
+}
+
+.left{
+    width: 50%;
+    background: honeydew;
+    display: flex;
+    position: relative;
+}
+
+.left::after{
+    content: '';
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(0, 168, 168) 100%, rgba(0, 116, 116, 0) 100%);
+    filter: blur(800px);
+}
+
+
+.right h2{
+    font-size: 100px;
+    margin-bottom: 60px;
+}
+
+.right h2 span{
+    font-family: 'ogg';
+    font-style: italic;
+}
+
+.freebie{
+    width: 50%;
+}

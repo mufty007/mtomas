@@ -7,6 +7,7 @@ import Hero from "../components/hero"
 import Projects from "../components/projects";
 import Process from "../components/process";
 import Skills from "../components/skills";
+import Freebies from "../components/freebie";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Projects/>
       <Process />
       <Skills/>
+      <Freebies/>
     </>
   )
 }
