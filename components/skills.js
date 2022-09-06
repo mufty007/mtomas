@@ -9,7 +9,7 @@ export default function Skills({ tool }){
 
     return(
         <div className={styles.heroContainer} id="work" >
-            <p className={styles.sectionTitle}>Selected projects</p>
+            <p className={styles.sectionTitle}>Tools & Technologies</p>
             <hr className={styles.line}></hr>
             
             <div className={styles.Skills}>

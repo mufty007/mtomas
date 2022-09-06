@@ -22,7 +22,7 @@ const ProjectCard = ({ id, title, year, website, tags, imageUrl }) => (
         </div>
         
         <div className={`${styles.img} animate__animated animate__zoomIn animate__delay-2s`}>
-            <Image src={imageUrl}/>
+            <Image src={imageUrl} alt={`image of ${title}`}/>
         </div>
         <div className={`${styles.projectInfoBottom} animate__animated animate__fadeIn animate__delay-1s`}>
             <div className={styles.year}>{year}</div>

@@ -12,40 +12,39 @@ export const tools = [
         "title": "Coding",
         "description": "These are the main programming languages I use in both my professional and personal projects. I also use other languages like C++, Apex (Salesforce), SOAP (Salesforce), VB.Net etc.",
         "icon": <AiOutlineCode size="2em"/>,
-        "skills": {
-            "html":{
-                "skillIcon": <TbBrandHtml5 />,
+        "skills": [
+            {
+                "skillIcon": <TbBrandHtml5 size="1.5em"/>,
                 "skillname": "HTML / HTML5"
             },
-            "css":{
-                "skillIcon": <TbBrandCss3 />,
+            {
+                "skillIcon": <TbBrandCss3 size="1.5em"/>,
                 "skillname": "CSS / CSS3"
             },
-            "javascript": {
-                "skillIcon": <TbBrandJavascript />,
+            {
+                "skillIcon": <TbBrandJavascript size="1.5em"/>,
                 "skillname": "JavaScript"
             },
-            "wordpress":{
-                "skillIcon": <SiWordpress />,
+            {
+                "skillIcon": <SiWordpress size="1.5em"/>,
                 "skillname": "wordpress"
             },
-            "react":{
-                "skillIcon": <SiReact />,
+            {
+                "skillIcon": <SiReact size="1.5em"/>,
                 "skillname": "React"
             },
-            "next":{
-                "skillIcon": <TbBrandNextjs />,
+            {
+                "skillIcon": <TbBrandNextjs size="1.5em"/>,
                 "skillname": "next.js"
-            },
-            "python":{
-                "skillIcon": <TbBrandPython />,
+            },{
+                "skillIcon": <TbBrandPython size="1.5em"/>,
                 "skillname": "python"
             },
-            "flutter":{
-                "skillIcon": <RiFlutterFill />,
+            {
+                "skillIcon": <RiFlutterFill size="1.5em"/>,
                 "skillname": "flutter"
             }
-        }
+        ]
     },
     {
         "id": 2,
@@ -54,33 +53,27 @@ export const tools = [
         "icon": <MdOutlineDesignServices size="2em"/>,
         "skills": [
             {
-                "id":1,
-                "skillIcon": <SiFigma />,
+                "skillIcon": <SiFigma size="1.5em"/>,
                 "skillname": "figma"
             },
             {
-                "id":2,
-                "skillIcon": <SiWebflow />,
+                "skillIcon": <SiWebflow size="1.5em"/>,
                 "skillname": "Webflow"
             },
             {
-                "id":3,
-                "skillIcon": <FaElementor />,
+                "skillIcon": <FaElementor size="1.5em"/>,
                 "skillname": "elementor"
             },
             {
-                "id":4,
-                "skillIcon": <SiAdobexd />,
+                "skillIcon": <SiAdobexd size="1.5em"/>,
                 "skillname": "Adode xD"
             },
             {
-                "id":5,
-                "skillIcon": <SiAdobeillustrator />,
+                "skillIcon": <SiAdobeillustrator size="1.5em"/>,
                 "skillname": "illustrator"
             },
             {
-                "id":6,
-                "skillIcon": <SiAdobephotoshop />,
+                "skillIcon": <SiAdobephotoshop size="1.5em"/>,
                 "skillname": "Photoshop"
             }
         ]
